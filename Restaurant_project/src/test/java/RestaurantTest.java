@@ -67,6 +67,14 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    @Test
+    public void orderTotal_cost_should_be_the_same_as_cost_of_item_selected_from_menu()
+    {
+        List<Item> selectedProducts = new ArrayList<>();
+        List<Item> menu = restaurant.getMenu();
+        selectedProducts.add(menu.get(0));
+        assertEquals(119,restaurant.orderTotal(selectedProducts));
+    }
 }
 
 //<<<<<<<<<<<<<<<<<<<<<<TOTAL ORDER VALUE>>>>>>>>>>>>>>>>>>>>>>>>>
