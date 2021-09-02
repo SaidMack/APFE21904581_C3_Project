@@ -22,4 +22,8 @@ public class Item {
                 + "\n"
                 ;
     }
+
+    public int getValue() {
+    return price;
+    }
 }

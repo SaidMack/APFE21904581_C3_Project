@@ -34,8 +34,8 @@ public class Restaurant {
         return LocalTime.now();
     }
 
-        public List<Item> getMenu(){
-            return getMenu();
+        public List<Item> getMenu() {
+            return menu;
 
             //DELETE ABOVE RETURN STATEMENT AND WRITE CODE HERE
         }
@@ -74,15 +74,14 @@ public class Restaurant {
             return name;
         }
 
-        public int orderTotal(List<Item> itemsChosen) {
-       /* int orderTotal = 0;
+        public int checkOrderTotal(List<Item> itemsChosen) {
+        int orderTotal = 0;
         for(Item iteminmenu : itemsChosen)
         {
             orderTotal = orderTotal + iteminmenu.getValue();
 
         }
 
-        return orderTotal;*/
-        return 185492;
+        return orderTotal;
     }
 }
